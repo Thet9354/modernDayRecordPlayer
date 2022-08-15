@@ -4,6 +4,9 @@ import RPi.GPIO as GPIO
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from time import sleep
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(16, GPIO.IN)
 
 DEVICE_ID="YOUR_DEVICE_ID"
 CLIENT_ID="YOUR_CLIENT_ID"
